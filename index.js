@@ -58,4 +58,7 @@ client.connect(err => {
 
 });
 
+app.get('/', (req, res) => {
+  res.send('ema john running')
+})
 app.listen(process.env.PORT || port)
